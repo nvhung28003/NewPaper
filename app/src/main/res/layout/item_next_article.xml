@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ConstrainCategorybottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        >
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#FEE155"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></View>
+        <TextView
+            android:fontFamily="@font/sfprodisplayregular"
+            android:paddingHorizontal="16dp"
+            android:id="@+id/txtcategorybottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Family Love"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+    </android.support.constraint.ConstraintLayout>
+ <RelativeLayout
+
+     android:id="@+id/RelativeNextarticle"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="#FEE155"
+     android:paddingHorizontal="16dp"
+     >
+     <TextView
+         android:fontFamily="@font/sfprodisplayregular"
+         android:id="@+id/txt1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Next article in "
+         android:layout_centerVertical="true"
+         android:textSize="18sp"
+         android:textColor="#000000"/>
+     <TextView
+         android:fontFamily="@font/sfprodisplayregular"
+         android:id="@+id/txtcategorynextarticle"
+         android:layout_centerVertical="true"
+         android:layout_toRightOf="@id/txt1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="18sp"
+         android:textColor="#000000"
+         android:text="Omg"/>
+     <ImageView
+         android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+         android:layout_width="10dp"
+         android:layout_height="wrap_content"
+         android:src="@drawable/next3x"
+         android:layout_alignParentRight="true"
+         />
+ </RelativeLayout>
+    <LinearLayout
+        android:paddingHorizontal="16dp"
+        android:layout_marginVertical="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvthumbnailNextArticle"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+             />
+
+        <TextView
+            android:fontFamily="@font/sfprodisplayregular"
+            android:id="@+id/txttitleNextArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingRight="2dp"
+            android:text="fdfggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

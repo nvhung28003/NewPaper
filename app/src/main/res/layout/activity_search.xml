@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeactivity_search"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/relativetopsearch"
+    android:background="#FEE155"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/imvBackSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/back3x" />
+
+    <TextView
+        android:fontFamily="@font/sfprodisplayregular"
+
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+
+    <RelativeLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/imvBackSearch"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/frame"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imvseach"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="9dp"
+            android:src="@drawable/searchmini2x" />
+
+        <EditText
+            android:fontFamily="@font/sfprodisplayregular"
+            android:imeOptions="actionSearch"
+           android:layout_toRightOf="@id/imvseach"
+            android:background="#E4CD65"
+            android:id="@+id/edtSearch"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:layout_toLeftOf="@id/imvdelete"
+            android:hint="Seach for titles"
+            android:textSize="16sp"
+            />
+        <ImageView
+
+            android:id="@+id/imvdelete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="9dp"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/delete"/>
+    </RelativeLayout>
+</RelativeLayout>
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/swipesearch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/relativetopsearch"
+    android:layout_marginTop="-1dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+    </android.support.v7.widget.RecyclerView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

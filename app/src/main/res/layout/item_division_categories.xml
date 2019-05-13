@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EFEEF3"
+    android:orientation="vertical"
+    android:paddingVertical="12dp">
+
+    <LinearLayout
+        android:paddingLeft="9dp"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:fontFamily="@font/sfprodisplayregular"
+            android:id="@+id/txtdivisionCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN CATEGORIES"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

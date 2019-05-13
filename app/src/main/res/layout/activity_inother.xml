@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/imvBackinother"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/back3x" />
+    <TextView
+        android:fontFamily="@font/sfprodisplayregular"
+        android:id="@+id/txtcategoryinother"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_toRightOf="@id/imvBackinother"
+        android:layout_toLeftOf="@id/imvsearchinother"
+        android:background="#FEE155"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="More"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:padding="15dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imvsearchinother"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/searchmini2x" />
+    <LinearLayout
+        android:layout_below="@id/imvsearchinother"
+        android:orientation="vertical"
+        android:id="@+id/linearinother"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+
+</RelativeLayout>

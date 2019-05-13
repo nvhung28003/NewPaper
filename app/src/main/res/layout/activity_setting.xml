@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeSetting"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/imvBackSetting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/back3x" />
+    <TextView
+        android:fontFamily="@font/sfprodisplayregular"
+        android:id="@+id/txtsetting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_toRightOf="@id/imvBackSetting"
+        android:layout_toLeftOf="@id/imvsearchinother"
+        android:background="#FEE155"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:padding="13dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imvsearchinother"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155" />
+
+    <RelativeLayout
+        android:id="@+id/relativeFontsize"
+        android:layout_below="@id/imvBackSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="9dp"
+        android:background="#ffffff"
+        >
+        <TextView
+            android:fontFamily="@font/sfprodisplayregular"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Font size"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:fontFamily="@font/sfprodisplayregular"
+            android:id="@+id/txtfontsizeinsetting"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/imvgo"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huge"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:id="@+id/imvgo"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next3x"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

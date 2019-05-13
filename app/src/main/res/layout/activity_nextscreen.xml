@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:padding="15dp"
+        android:id="@+id/imvBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/back3x" />
+
+    <TextView
+        android:fontFamily="@font/sfprodisplayregular"
+
+        android:id="@+id/txtYellowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/imvBack"
+      android:layout_toLeftOf="@id/imvShare"
+        android:background="#FEE155"
+        android:gravity="center"
+        android:singleLine="true"
+        android:nextFocusRight="@drawable/share3x"
+        android:paddingVertical="8dp"
+        android:text="idddddddddddddddddddddddddddddddddf"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:freezesText="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ImageView
+        android:padding="13dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imvShare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FEE155"
+        android:src="@drawable/share3x" />
+<android.support.v4.view.ViewPager
+    android:layout_below="@id/txtYellowTitle"
+android:id="@+id/vpgdetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v4.view.ViewPager>
+</RelativeLayout>
